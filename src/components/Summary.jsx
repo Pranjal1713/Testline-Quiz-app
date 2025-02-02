@@ -1,7 +1,5 @@
 import ReactMarkdown from "react-markdown";
 
-
-
 const Summary = () => {
   const data = JSON.parse(localStorage.getItem("question-store"));
   const result = JSON.parse(localStorage.getItem("quiz-store"));
@@ -45,8 +43,9 @@ const Summary = () => {
               <h2 className="text-xl font-semibold mb-3">
                 Detailed Explanation:
               </h2>
-              {/* <p className="whitespace-pre-line">{question.detailed_solution}</p> */}
-              <ReactMarkdown className="prose whitespace-pre-line">{question.detailed_solution}</ReactMarkdown>
+              <ReactMarkdown className="prose whitespace-pre-line">
+                {question.detailed_solution}
+              </ReactMarkdown>
             </div>
           </div>
         ))}
