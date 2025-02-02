@@ -92,12 +92,14 @@ const Quiz = () => {
             ))}
 
             <div className="px-5 w-full flex justify-between items-center mt-10 mb-5">
-              <button
-                className="border border-gray-300 px-4 py-2 mb-5 rounded-3xl bg-blue-300 hover:bg-blue-400"
-                onClick={onPrevious}
-              >
-                Previous
-              </button>
+              {curr > 1 && (
+                <button
+                  className="border border-gray-300 px-4 py-2 mb-5 rounded-3xl bg-blue-300 hover:bg-blue-400"
+                  onClick={onPrevious}
+                >
+                  Previous
+                </button>
+              )}
               <h1 className=" text-center mb-5">{curr}/10 </h1>
               {curr === questions.length ? (
                 <button
