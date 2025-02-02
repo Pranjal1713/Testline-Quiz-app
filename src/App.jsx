@@ -11,9 +11,14 @@ function App() {
   useEffect(() => {
     setIsSubmit(false);
     setSummary(false)
-    localStorage.removeItem("quiz-store");
-
+    
   }, []);
+  
+  
+  const handleReset = () => {
+    localStorage.removeItem("quiz-store");
+    window.location.reload();
+  }
 
   
 
@@ -32,6 +37,12 @@ function App() {
         {
           summary && submited && <Summary />
         }
+
+        {
+          !summary && !submited && 
+          <div className="text-center">
+          <button onClick={handleReset} className="border border-gray-300 bg-blue-200 rounded-xl px-3 py-2">Reset Quiz</button>
+        </div>}
       </div>
     </>
   );
