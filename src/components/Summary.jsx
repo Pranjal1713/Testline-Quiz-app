@@ -11,13 +11,14 @@ const Summary = () => {
 
   return (
     <div>
-      <h1 className="text-center text-2xl mt-6">Summary Here...</h1>
+      <h1 className="text-center text-2xl mt-6">Summary</h1>
+      <hr className="border border-gray-300 w-[200px] mx-auto mt-2" />
 
       {questions &&
         questions.map((question, index) => (
           <div
             key={index}
-            className="w-[400px] min-h-[400px] bg-blue-50 rounded-lg mx-auto mt-[6rem] shadow-lg p-4"
+            className="w-[400px] min-h-[400px] bg-blue-50 rounded-lg mx-auto mt-7 shadow-lg p-4"
           >
             <h1 className="text-lg mb-4">{question.description}</h1>
 
@@ -39,7 +40,7 @@ const Summary = () => {
               </div>
             ))}
 
-            <div className="p-6 bg-gray-100 rounded-lg shadow-md mt-3 border border-gray-200">
+            <div className="p-6 bg-gray-100 rounded-lg shadow-md mt-5 border border-gray-200">
               <h2 className="text-xl font-semibold mb-3">
                 Detailed Explanation:
               </h2>
