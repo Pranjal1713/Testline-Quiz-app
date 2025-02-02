@@ -11,9 +11,11 @@ function App() {
   useEffect(() => {
     setIsSubmit(false);
     setSummary(false)
-    // localStorage.removeItem("quiz-store");
+    localStorage.removeItem("quiz-store");
 
   }, []);
+
+  
 
   return (
     <>

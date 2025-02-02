@@ -9,6 +9,9 @@ const Summary = () => {
 
   return (
     <div>
+
+      <h1 className="text-center text-2xl mt-6">Summary Here...</h1>
+
       {questions &&
         questions.map((question, index) => (
           <div
