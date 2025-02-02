@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { QuestionStore, QuizStore, SubmitStore } from "../store/store";
 
 // const api = import.meta.env.VITE_API;
+// const api = "https://api.jsonserve.com/Uw5CrX";
 const API_URL = "/api/Uw5CrX";
 
 const Quiz = () => {

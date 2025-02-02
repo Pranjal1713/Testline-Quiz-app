@@ -18,7 +18,7 @@ const Summary = () => {
         questions.map((question, index) => (
           <div
             key={index}
-            className="w-[400px] min-h-[400px] bg-blue-50 rounded-lg mx-auto mt-7 shadow-lg p-4"
+            className="w-[600px] min-h-[400px] bg-blue-50 rounded-lg mx-auto mt-7 shadow-lg p-4"
           >
             <h1 className="text-lg mb-4">{question.description}</h1>
 
